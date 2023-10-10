@@ -1,7 +1,3 @@
-- Installation
-sudo apt update
-sudo apt install gcc make linux-headers-$(uname -r)
-
 # Firewall
 
 A very simple linux kernel firewall module.
@@ -22,13 +18,21 @@ sudo apt install gcc make linux-headers-$(uname -r)
 
 ### Compile
 
-* Change directory to cloned repository
-* Run make
+- Change directory to cloned repository
+- Run:
+
+```bash
+make
+```
 
 ### Insert module
 
-* sudo insmod firewall.ko
+```bash
+sudo insmod firewall.ko
+```
 
 ### Remove module
 
-* sudo rmmod firewall
+```bash
+sudo rmmod firewall
+```
